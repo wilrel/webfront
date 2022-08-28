@@ -1,0 +1,139 @@
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400;700&display=swap');
+
+/* Umum */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Edu SA Beginner", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h2,
+h3 {
+  color: #2C3333;
+}
+
+p {
+  text-align: justify;
+  font-family: "Edu SA Beginner", sans-serif;
+  text-indent: 2em;
+}
+
+#letter-spacing {
+  letter-spacing: 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #395B64;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* HEADER */
+
+.jumbotron {
+  font-size: 20px;
+  padding: 50px;
+  background-color: #A5C9CA;
+  text-align: center;
+  color: black;
+}
+
+/* NAVBAR */
+nav {
+  background-color: #E7F6F2;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  font-size: 20px;
+  font-weight: 100;
+  text-decoration: none;
+  color: #2C3333;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #A5C9CA;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+/* IMAGE SETTING */
+.featured-image {
+  width: 100%;
+  max-width: 350px;
+  object-position: center;
+  transition: .3s;
+  border-radius: 5px;
+}
+
+.featured-image:hover {
+  transform: scale(1.11);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* MAIN  */
+main {
+  padding: 20px;
+  overflow: auto;
+}
+
+
+/* ASIDE  */
+.profile {
+  text-align: center;
+}
+
+#content {
+  float: left;
+  width: 70%;
+  padding: 12px;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  padding: 12px;
+}
+
+/* FOOTER  */
+
+footer {
+  color: #2C3333;
+  padding: 17px;
+  background-color: #E7F6F2;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p {
+
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1000px) {
+
+  #content,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}

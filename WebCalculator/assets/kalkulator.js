@@ -94,11 +94,15 @@ function performCalculation() {
     result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber);
   }
 
-  calculator.displayNumber = result;
-}
+  renderHistory();
 
-if (typeof (Storage) !== 'undefined') {
-  // Browser mendukung sessionStorage/localStorage.
-} else {
-  // Browser tidak mendukung sessionStorage/LocalStorage
+  const history = {
+    firstNumber: calculator.firstNumber,
+    secondNumber: calculator.displayNumber,
+    operator: calculator.operator,
+    result: result
+  }
+  putHistory(history);
+  calculator.displayNumber = result;
+  renderHistory();
 }
